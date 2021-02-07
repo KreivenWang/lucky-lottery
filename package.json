@@ -6,8 +6,12 @@
   "dependencies": {
     "webpack": "^5.21.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  },
   "scripts": {
+    "start": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
