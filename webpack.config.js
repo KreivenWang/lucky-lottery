@@ -42,6 +42,6 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new webpack.ProgressPlugin(),
-    new HtmlWebpackPlugin({ template: './src/ui/index.html' }),
+    new HtmlWebpackPlugin({ template: './src/ui/index.html', chunks: ['ui'] }),
   ],
 };
