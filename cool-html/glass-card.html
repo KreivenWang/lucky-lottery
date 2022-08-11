@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./glass-card.css">
     <script type="text/javascript" src="./vanilla-tilt.min.js"></script>
-    <title>Prophet Home</title>
+    <title>Glass Card</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="card">
+    <div class="glass-card-container">
+        <div class="glass-card">
             <div class="content">
                 <h2>01</h2>
                 <h3>rate * * * * *</h3>
@@ -20,7 +20,7 @@
                 <button>Fix the issue</button>
             </div>
         </div>
-        <div class="card">
+        <div class="glass-card">
             <div class="content">
                 <h2>02</h2>
                 <h3>rate * * * *</h3>
@@ -28,7 +28,7 @@
                 <button>Fix the issue</button>
             </div>
         </div>
-        <div class="card">
+        <div class="glass-card">
             <div class="content">
                 <h2>03</h2>
                 <h3>rate * * *</h3>
@@ -38,7 +38,9 @@
         </div>
         <div></div>
     </div>
+    <script src="./browser-sync-no-notify.js"></script>
     <script>
+
         VanillaTilt.init(document.querySelectorAll('.card'), {
             max: 5,
             speed: 100,
@@ -47,10 +49,7 @@
         })
 
 
-        // disable browser sync notification
-        setTimeout(() => {
-            document.getElementById('noop').remove()
-        }, 100);
+
     </script>
 </body>
 
