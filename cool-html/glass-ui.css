@@ -3,11 +3,14 @@
 :root {
     font-size: 16px;
     font-weight: 400;
+    --accent-warm-200: rgba(235, 107, 124, 1);
     --accent-warm-100: rgba(238, 156, 167, 1);
+    --accent-cold-200: rgba(48, 194, 226, 1);
     --accent-cold-100: rgba(109, 213, 237, 1);
     --accent-cold-50: rgba(109, 213, 237, 0.5);
     --bg: rgba(22, 22, 38, 1);
-    --fg: rgba(187, 187, 187, 1);
+    --fg-200: rgba(240, 240, 240, 1);
+    --fg-100: rgba(187, 187, 187, 1);
     --control-bg: rgba(255, 255, 255, 0.1);
 }
 
@@ -24,7 +27,7 @@
     outline: none;
     transition: 0.25s;
     border-radius: 8px;
-    color: var(--fg);
+    color: var(--fg-100);
 }
 
 body {
@@ -83,9 +86,9 @@ select {
 
 input[type='text']:hover,
 select:hover {
-    border-top: 1px solid rgba(233, 233, 233, 0.5);
-    border-left: 1px solid rgba(233, 233, 233, 0.5);
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5),
+    border-top: 1px solid rgba(233, 233, 233, 1);
+    border-left: 1px solid rgba(233, 233, 233, 1);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 1),
         0 0 10px rgba(255, 255, 255, 0.2);
 }
 
@@ -97,8 +100,8 @@ input[type='text']:focus {
 select {
     appearance: none;
     background-image:
-        linear-gradient(45deg, transparent 50%, var(--fg) 50%),
-        linear-gradient(135deg, var(--fg) 50%, transparent 50%);
+        linear-gradient(45deg, transparent 50%, var(--fg-100) 50%),
+        linear-gradient(135deg, var(--fg-100) 50%, transparent 50%);
     background-position:
         calc(100% - 20px) calc(1em + 2px),
         calc(100% - 15px) calc(1em + 2px),
@@ -112,8 +115,8 @@ select {
 
 select:focus {
     background-image:
-        linear-gradient(45deg, var(--fg) 50%, transparent 50%),
-        linear-gradient(135deg, transparent 50%, var(--fg) 50%);
+        linear-gradient(45deg, var(--fg-100) 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, var(--fg-100) 50%);
     background-position:
         calc(100% - 15px) 1em,
         calc(100% - 20px) 1em,
@@ -138,8 +141,8 @@ button {
     background-color: var(--control-bg);
     padding: 8px 16px;
     /* highlight border */
-    border-top: 1px solid rgba(233, 233, 233, 0.5);
-    border-left: 1px solid rgba(233, 233, 233, 0.5);
+    /* border-top: 1px solid rgba(233, 233, 233, 0.5); */
+    /* border-left: 1px solid rgba(233, 233, 233, 0.5); */
     /* shadow */
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
 }
@@ -149,22 +152,41 @@ button {
     background: var(--accent-cold-100);
 }
 
+
+
 .btn-secondary {
     color: var(--bg);
     background: var(--accent-warm-100);
 }
 
 .btn-info {
-    color: var(--fg);
+    color: var(--bg);
+    background: var(--fg-100);
 }
 
 button:hover {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 1),
+        0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.btn-primary:hover {
+    background: var(--accent-cold-200);
+}
+
+.btn-secondary:hover {
+    background: var(--accent-warm-200);
+}
+
+.btn-info:hover {
+    color: var(--bg);
+    background: var(--fg-200);
 }
 
 button:active {
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
-    background-color: rgba(233, 233, 233, 0.5);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(255, 255, 255, 0.4);
+    background-color: rgba(233, 233, 233, 0.8);
+    backdrop-filter: blur(15px);
 }
 
 /*
