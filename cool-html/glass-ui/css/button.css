@@ -25,6 +25,7 @@ button.gls.btn-info {
 
 button.gls:hover {
   box-shadow: 20px 20px 50px var(--black-50), 0 0 10px var(--white-20);
+  transform: translateY(-3px);
 }
 
 button.gls.btn-primary:hover {
@@ -44,4 +45,5 @@ button.gls:active {
   box-shadow: 20px 20px 50px var(--black-50), 0 0 20px var(--white-40);
   background-color: var(--lightgray-70);
   backdrop-filter: blur(15px);
+  transform: translateY(-1px);
 }

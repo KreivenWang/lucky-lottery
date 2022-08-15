@@ -1,29 +1,38 @@
-th {
-  background-color: var(--info);
-  color: rgba(255, 255, 255, 0.66);
+.gls thead th {
+  background-color: transparent !important;
+  color: var(--fg);
   cursor: pointer;
   user-select: none;
+  padding: 0.5em 1em;
 }
 
-td {
-  background-color: #f9f9f9;
+.gls tbody td {
+  color: var(--white);
+  background-color: var(--white-05);
+  padding: 0.5em 1em;
 }
 
-th,
-td {
-  min-width: 120px;
-  padding: 10px 20px;
+.gls tbody tr:nth-child(even) {
+  background-color: var(--accent-cold-10);
 }
 
-th.active {
-  color: #fff;
+.gls tbody tr:nth-child(odd) {
+  background-color: var(--accent-warm-10);
 }
 
-th.active .arrow {
+.gls tbody tr:hover {
+  background-color: var(--white-20);
+}
+
+.gls thead th.active {
+  color: rgb(199, 31, 31);
+}
+
+.gls th.active .arrow {
   opacity: 1;
 }
 
-.arrow {
+.gls .arrow {
   display: inline-block;
   vertical-align: middle;
   width: 0;
@@ -32,13 +41,13 @@ th.active .arrow {
   opacity: 0.66;
 }
 
-.arrow.asc {
+.gls .arrow.asc {
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-bottom: 4px solid #fff;
 }
 
-.arrow.dsc {
+.gls .arrow.dsc {
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-top: 4px solid #fff;

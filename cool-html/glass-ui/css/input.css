@@ -33,3 +33,22 @@ select.gls:focus {
 
   box-shadow: 20px 20px 50px var(--black-50), 0 0 20px var(--white-40);
 }
+
+.gls-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.gls-search-input {
+  padding-left: 2.5rem;
+}
+
+.gls-search-icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+  z-index: 100;
+}
