@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/glass-ui-layout.css" />
-    <link rel="stylesheet" href="./css/glass-ui.css" />
+    <style>
+      body {
+        background-color: black;
+      }
+    </style>
+    <link rel="stylesheet" href="./third-party-css/vanilla-tilt.min.js" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/input.css" />
     <link rel="stylesheet" href="./css/button.css" />
     <link rel="stylesheet" href="./css/card.css" />
     <link rel="stylesheet" href="./css/table.css" />
+
     <title>Glass UI</title>
   </head>
 
@@ -17,7 +25,7 @@
     <h1 style="align-self: center">Glass UI</h1>
 
     <h3 class="mt-4">Input</h3>
-    <input type="text" class="gls" />
+    <input type="text" class="gls" placeholder="input example" />
     <div class="gls-search mt-4">
       <svg class="gls-search-icon" aria-hidden="true" viewBox="0 0 26 26">
         <g>
@@ -47,33 +55,27 @@
     <h3 class="mt-4">Card</h3>
     <div style="display: flex">
       <div class="gls gls-card mr-6">
-        <div>
-          <div class="gls-card-content">
-            <h2>01</h2>
-            <h3>Subject Title 1</h3>
-            <p>Here is the content or description for you subject</p>
-            <button>More</button>
-          </div>
+        <div class="gls-card-content">
+          <h2>01</h2>
+          <h3>Subject Title 1</h3>
+          <p>Here is the content or description for you subject</p>
+          <button>More</button>
         </div>
       </div>
       <div class="gls gls-card mr-6">
-        <div>
-          <div class="gls-card-content">
-            <h2>02</h2>
-            <h3>Subject Title 2</h3>
-            <p>Here is the content or description for you subject</p>
-            <button>More</button>
-          </div>
+        <div class="gls-card-content">
+          <h2>02</h2>
+          <h3>Subject Title 2</h3>
+          <p>Here is the content or description for you subject</p>
+          <button>More</button>
         </div>
       </div>
       <div class="gls gls-card mr-6">
-        <div>
-          <div class="gls-card-content">
-            <h2>03</h2>
-            <h3>Subject Title 3</h3>
-            <p>Here is the content or description for you subject</p>
-            <button>More</button>
-          </div>
+        <div class="gls-card-content">
+          <h2>03</h2>
+          <h3>Subject Title 3</h3>
+          <p>Here is the content or description for you subject</p>
+          <button>More</button>
         </div>
       </div>
     </div>
@@ -105,10 +107,17 @@
         </tr>
       </tbody>
     </table>
+    <h3 class="mt-4">List</h3>
+    <h3 class="mt-4">Rate</h3>
+    <h3 class="mt-4">Like</h3>
+    <h3 class="mt-4">AutoComplete</h3>
+    <h3 class="mt-4">Scrollbar</h3>
+    <h3 class="mt-4">Menu</h3>
+    <h3 class="mt-4">Sidebar</h3>
 
     <script src="./browser-sync-no-notify.js"></script>
     <script>
-      VanillaTilt.init(document.querySelectorAll('.glass-card'), {
+      VanillaTilt.init(document.querySelectorAll('.gls-card'), {
         max: 5,
         speed: 100,
         glare: true,

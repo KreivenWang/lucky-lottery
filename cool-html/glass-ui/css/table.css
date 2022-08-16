@@ -10,6 +10,7 @@
   color: var(--white);
   background-color: var(--white-05);
   padding: 0.5em 1em;
+  border-radius: 8px;
 }
 
 .gls tbody tr:nth-child(even) {
