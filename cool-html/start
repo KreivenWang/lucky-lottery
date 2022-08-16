@@ -1,1 +1,1 @@
-npx browser-sync start --server --files "**" --no-open --no-notify --directory
+npx browser-sync start --server 'cool-html/glass-ui' --files "**" --no-open --no-notify --directory
