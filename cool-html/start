@@ -1,1 +1,5 @@
+# start as a static file server directory
 npx browser-sync start --server 'cool-html/glass-ui' --files "**" --no-open --no-notify --directory
+
+# start as a web server
+npx browser-sync start --server 'cool-html/glass-ui' --files "**" --no-open --no-notify
